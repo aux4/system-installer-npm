@@ -1,0 +1,68 @@
+{
+  "scope": "aux4",
+  "name": "system-installer-npm",
+  "description": "aux4 system installer for npm",
+  "version": "0.0.2",
+  "dependencies": [
+    "aux4/pkger"
+  ],
+  "tags": [
+    "aux4",
+    "system-installer",
+    "node",
+    "npm"
+  ],
+  "profiles": [
+    {
+      "name": "aux4:pkger:system",
+      "commands": [
+        {
+          "name": "npm",
+          "execute": [
+            "profile:aux4:pkger:system:npm"
+          ],
+          "help": {
+            "text": "manage npm packages"
+          }
+        } 
+      ]
+    },
+    {
+      "name": "aux4:pkger:system:npm",
+      "commands": [
+        {
+          "name": "install",
+          "execute": [
+            "npm install --global ${package}"
+          ],
+          "help": {
+            "text": "install npm package",
+            "variables": [
+              {
+                "name": "package",
+                "text": "package name",
+                "arg": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "uninstall",
+          "execute": [
+            "npm uninstall --global ${package}"
+          ],
+          "help": {
+            "text": "uninstall npm package",
+            "variables": [
+              {
+                "name": "package",
+                "text": "package name",
+                "arg": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
