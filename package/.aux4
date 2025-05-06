@@ -2,7 +2,7 @@
   "scope": "aux4",
   "name": "system-installer-npm",
   "description": "aux4 system installer for npm",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "dependencies": [
     "aux4/pkger"
   ],
@@ -31,7 +31,7 @@
           "help": {
             "text": "manage npm packages"
           }
-        } 
+        }
       ]
     },
     {
