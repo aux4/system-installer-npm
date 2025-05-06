@@ -2,9 +2,16 @@
   "scope": "aux4",
   "name": "system-installer-npm",
   "description": "aux4 system installer for npm",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "dependencies": [
     "aux4/pkger"
+  ],
+  "system": [
+    [
+      "test:npm --version",
+      "brew:node",
+      "apt:nodejs"
+    ]
   ],
   "tags": [
     "aux4",
