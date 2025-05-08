@@ -11,6 +11,10 @@
       "test:npm --version",
       "brew:node",
       "apt:nodejs"
+    ],
+    [
+      "test:npm --version",
+      "apt:npm"
     ]
   ],
   "tags": [
